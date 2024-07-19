@@ -262,9 +262,9 @@
                 </div>
         </div>
         <hr class="footer-line">
-        <p class="pt-3 font-inter fs-6 lh-121 opactiy-80 text-white mx-auto text-center pb-3 fw-normal m-0">
-               ©2024 CafeGato | All Rights reserved
-        </p>
+        <p class="pt-3 font-inter fs-6 lh-121 opacity-80 text-white mx-auto text-center pb-3 fw-normal m-0">
+          ©<span id="current-year"></span> CafeGato | All Rights Reserved
+      </p>
 </Footer>
     </div>
     <script
@@ -272,5 +272,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
   </body>
 </html>
