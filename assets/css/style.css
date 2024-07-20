@@ -436,10 +436,11 @@ hr {
 }
 /* backtotop */
 .backto-top {
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   cursor: pointer;
   display: none;
+  
 }
 .z-5 {
   z-index: 5;
