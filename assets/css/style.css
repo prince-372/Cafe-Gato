@@ -325,6 +325,7 @@ hr {
 }
 .cloud-text {
   max-width: 205px;
+  text-shadow: 0px 4px 7.1px 0px #00000040;
 }
 .header-cat {
   max-width: 108px;
