@@ -1,10 +1,10 @@
 :root {
     /* font size */
     --fs-sm: 16px;
-    --fs-md: 22px;
+    --fs-md: 16px;
     --fs-lg: 31px;
-    --fs-xl: 22px;
-    --fs-xxl: 35px;
+    --fs-xl: 30px;
+    --fs-xxl: 40px;
  
     /* font color */
     --dark-blue: #09384e;
@@ -70,7 +70,7 @@
   background-color: var(--light-pink);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768.5px) {
     :root {
         /* font size */
         --fs-sm: 20px;

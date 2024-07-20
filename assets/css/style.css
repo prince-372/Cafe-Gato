@@ -28,16 +28,16 @@ body {
 /* line-height */
 
 .lh-sm {
-  line-height: 118%;
+  line-height: 118% !important;
 }
 .lh-md {
-  line-height: 120%;
+  line-height: 120% !important;
 }
 .lh-lg {
-  line-height: 121%;
+  line-height: 121% !important;
 }
-.lh-170 {
-  line-height: 170%;
+.lh-xl {
+  line-height: 150% !important;
 }
 
 /* hight-width */
@@ -130,7 +130,7 @@ hr {
   padding-top: 30px;
 }
 .footer-logo {
-  max-width: 125px;
+  max-width: 96px;
 }
 .women-chair {
   width: 459px;
@@ -142,7 +142,7 @@ hr {
 }
 
 .mission-text {
-  padding-top: 84px;
+  padding-top: 36px;
 }
 
 .about-card {
@@ -150,6 +150,7 @@ hr {
   border: 4px solid var(--dark-blue);
   border-radius: 13px;
   box-shadow: 0px 22px 0px 0px var(--dark-blue);
+  padding: 9px;
 }
 .pointer-events{
   pointer-events: none;
@@ -194,7 +195,7 @@ hr {
   position: absolute;
   max-width: 709px;
   max-height: 461px;
-  top: 28%;
+  top: 22%;
   right: 0;
 }
 
@@ -207,8 +208,8 @@ hr {
 }
 
 .mission-img {
-  max-width: 459px;
-  max-height: 631px;
+  max-width: 240px;
+  max-height: 334px;
 }
 .big-blue-leg{
   position: absolute;
@@ -217,14 +218,18 @@ hr {
   top: 6%;
   right: 0%;
 }
+.social-media-icon{
+  width: 28px;
+  height: 28px;
+}
 /* backgroud-image */
 .bg-cat-with-cloud {
-  background-image: url("/assets/image/webp/cloud-header.png");
+  background-image: url("/assets/image/webp/cloud-header.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 339px;
-  height: 257px;
+  width: 233px;
+  height: 184px;
 }
 
 /* card */
@@ -252,7 +257,6 @@ hr {
 }
 .restrorent-img {
   max-height: 878px;
-  max-width: 1459px;
 }
 
 .man-with-cat {
@@ -284,6 +288,11 @@ hr {
   position: absolute;
   top: 24%;
   right: 0%;
+}
+.mission-foot-elipes{
+  position: absolute;
+  bottom: 24%;
+  left: 0%;
 }
 
 .page-logo {
@@ -317,7 +326,7 @@ hr {
   max-width: 108px;
   max-height: 82px;
   right: -26%;
-  bottom: -17%;
+  bottom: 2%;
 }
 .bg-header-elipes {
   max-width: 500px;
@@ -346,8 +355,8 @@ hr {
 }
 
 .journey-img {
-  max-width: 408px;
-  max-height: 525px;
+  max-width: 235px;
+  max-height: 336px;
 }
 .form-input {
   padding: 12px;
@@ -359,6 +368,7 @@ hr {
   font-family: inter !important;
   font-weight: 400 !important;
   color: var(--dark-blue);
+  background-color: var(--light-skin);
 }
 
 .form-input:focus {
@@ -392,7 +402,7 @@ hr {
 .connected-layer {
   position: absolute;
   top: 30%;
-  right: -4%;
+  right: 0%;
   z-index: -1;
   width: 400px;
   height: 300px;
@@ -423,6 +433,23 @@ hr {
 }
 .cloud-text{
   max-width: 200px;
+}
+/* backtotop */
+.backto-top {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  display: none;
+}
+.z-5 {
+  z-index: 5;
+}
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
 }
 /* ==================================    MEDIA SCREEN   ====================================== */
 
@@ -466,7 +493,7 @@ hr {
   }
   .header-cat {
     max-height: 102px;
-    right: -34%;
+    right: -24%;
   }
   .bg-header-elipes {
     max-width: 600px;
@@ -504,13 +531,13 @@ hr {
     gap: 38px;
   }
   .journy-bottom {
-    padding-bottom: 266px;
+    padding-bottom: 65px;
   }
   .text-top {
-    padding-top: 97px;
+    padding-top: 41px;
   }
   .benefits-bottom {
-    padding-bottom: 100px;
+    padding-bottom: 85px;
   }
   .benefits-elipes2 {
     position: absolute;
@@ -518,17 +545,57 @@ hr {
     bottom: 3%;
   }
   .footer-logo {
-    max-width: 155px;
+    max-width: 125px;
   }
   .mission-spacing {
-    padding-top: 140px;
-    padding-bottom: 140px;
+    padding-top: 81px;
+    padding-bottom: 52px;
+  }
+  .connected-bottom-spacing {
+    padding-bottom: 100px;
+  }
+  .mission-text-spacing{
+    padding-bottom: 19px;
+  }
+  .bg-cat-with-cloud {
+    width: 339px;
+    height: 257px;
+  }
+  .about-card {
+    max-width: 1140px;
+    border: 4px solid var(--dark-blue);
+    border-radius: 13px;
+    box-shadow: 0px 22px 0px 0px var(--dark-blue);
+    padding: 25px;
+  }
+  .mission-text {
+    padding-top: 39px;
+  }
+.journey-img {
+  max-width: 408px;
+  max-height: 525px;
+}
+.social-media-icon{
+  width: 38px;
+  height: 38px;
+}
+}
+@media (min-width: 768.5px) {
+  .mission-text {
+    padding-top: 84px;
+  }
+  .text-top {
+    padding-top: 97px;
   }
   .connected-bottom-spacing {
     padding-bottom: 233px;
   }
-}
-@media (min-width: 768px) {
+  .benefits-bottom {
+    padding-bottom: 100px;
+  }
+  .journy-bottom {
+    padding-bottom: 139px;
+  }
   .header-cloud {
     width: 280px;
     height: 220px;
@@ -548,7 +615,7 @@ hr {
     max-height: 450px;
   }
   .header-blub {
-    right: 8%;
+    right: 1%;
     height: 238px;
     width: 65px;
   }
@@ -557,9 +624,7 @@ hr {
     max-height: 102px;
     margin-top: 22px;
   }
-  .header-cat {
-    max-height: 122px;
-  }
+ 
   .cat-lover {
     max-width: 530px;
     height: 689px;
@@ -593,13 +658,25 @@ hr {
     padding-bottom: 18px;
     padding-top: 18px;
 }
+.mission-img {
+  max-width: 459px;
+  max-height: 631px;
+}
+.mission-spacing {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+.header-cat {
+  max-height: 102px;
+  right: -34%;
+}
 }
 @media (min-width: 992px) {
   .connected-layer {
     position: absolute;
-    top: 10%;
-    right: -25%;
-    width: 730px;
+    top: 29%;
+    right: 0%;
+    width: 669px;
     height: unset;
 }
 
@@ -663,9 +740,35 @@ hr {
     bottom: 0;
   }
   .mission-spacing {
+    padding-top: 115px;
+    padding-bottom: 115px;
+  }
+}
+@media (min-width:1024.5px) {
+  .about-card {
+    max-width: 1140px;
+    border: 4px solid var(--dark-blue);
+    border-radius: 13px;
+    box-shadow: 0px 22px 0px 0px var(--dark-blue);
+  }
+  .lh-xl {
+    line-height: 170%;
+  }
+  .mission-spacing {
     padding-top: 217px;
     padding-bottom: 217px;
   }
+  .mission-shadow {
+    position: absolute;
+    max-width: 709px;
+    max-height: 461px;
+    top: 28%;
+    right: 0;
+  }
+  .journy-bottom {
+    padding-bottom: 266px;
+  }
+ 
 }
 
 @media (min-width: 1200px) {
