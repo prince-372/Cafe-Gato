@@ -95,7 +95,7 @@ body {
   padding-bottom: 56px;
 }
 .footer-line {
-  height: 1px;
+  height: 2px;
   width: 100%;
   background-color: var(--light-grey) !important;
 }
@@ -151,6 +151,10 @@ hr {
   border-radius: 13px;
   box-shadow: 0px 22px 0px 0px var(--dark-blue);
   padding: 9px;
+  transition: all linear 300ms;
+}
+.about-card:hover {
+  box-shadow: unset !important;
 }
 .pointer-events{
   pointer-events: none;
@@ -240,6 +244,10 @@ hr {
   box-shadow: 0px 22px 0px 0px var(--dark-blue);
   background-color: var(--light-pink);
   padding: 22px 20px 16px 20px;
+  transition: all linear 300ms;
+}
+.thank-box:hover {
+  box-shadow: unset !important;
 }
 
 .cat-lover {
@@ -849,7 +857,7 @@ hr {
     right: 0;
   }
   .women-cat-spacing{
-    margin-top: -12%;
+    margin-top: -13%;
   }
   
 }
