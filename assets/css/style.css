@@ -33,7 +33,7 @@ body {
 .lh-md {
   line-height: 120% !important;
 }
-.lh-lg {
+.lh-lg1 {
   line-height: 121% !important;
 }
 .lh-xl {
@@ -365,6 +365,9 @@ hr {
 .header-bottom-elipes {
   width: 87px;
   height: 70px;
+}
+.mission-text-spacing{
+  padding-bottom: 10px;
 }
 
 .journey-img {
